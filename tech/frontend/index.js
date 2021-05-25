@@ -1,7 +1,4 @@
 module.exports = {
-    packages: [
-        'lint-staged', 'husky'
-    ],
     directories: [
         {
             name: 'es-lint',
@@ -10,6 +7,14 @@ module.exports = {
         {
             name: 'prettier',
             path: 'src/tools/prettier'
+        },
+        {
+            name: 'husky',
+            path: 'src/tools/husky'
+        },
+        {
+            name: 'lint-staged',
+            path: 'src/tools/husky'
         }
     ]
 }
