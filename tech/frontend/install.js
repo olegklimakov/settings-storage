@@ -5,11 +5,11 @@ module.exports = {
     directories: [
         {
             name: 'es-lint',
-            instruction: 'src/linters/es-lint/install.js',
+            path: 'src/linters/es-lint',
         },
         {
             name: 'prettier',
-            instruction: 'src/tools/prettier/install.js'
+            path: 'src/tools/prettier'
         }
     ]
 }
