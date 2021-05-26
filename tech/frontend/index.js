@@ -14,7 +14,7 @@ module.exports = {
         },
         {
             name: 'lint-staged',
-            path: 'src/tools/husky'
+            path: 'src/tools/lint-staged'
         }
     ]
 }
