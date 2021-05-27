@@ -1,6 +1,6 @@
 module.exports = {
     devPackages: [
-        "husky",
+        "husky@4",
     ],
     packageJsonHooks: [{
         "husky": {
