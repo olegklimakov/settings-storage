@@ -2,8 +2,8 @@ module.exports = {
     directories: [
         {
             name: 'es-lint',
-            rule: require('src/linters/es-lint'),
-            path: 'src/linters/es-lint',
+            rule: require('src/linters/es-lint-backend'),
+            path: 'src/linters/es-lint-backend',
         },
         {
             name: 'prettier',
