@@ -4,7 +4,11 @@ module.exports = {
     ],
     packageJsonHooks: [{
         "lint-staged": {
-            "{src}/**/*": "prettier --write --ignore-unknown",
+            "{src}/**/*": [
+                "prettier --write",
+                "eslint --fix",
+                "git add"
+            ],
         }
     }]
 }

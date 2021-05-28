@@ -7,6 +7,10 @@ module.exports = {
         '@typescript-eslint/recommended',
         'prettier/@typescript-eslint',
         'prettier/recommended',
+        '@typescript-eslint/eslint-plugin',
+        'eslint',
+        'eslint-config-airbnb-base',
+        'eslint-plugin-prettier'
     ],
     files: [
         '.eslintrc.js'
