@@ -4,11 +4,15 @@ module.exports = {
     ],
     packageJsonHooks: [{
         "lint-staged": {
-            "{src}/**/*": [
+            "*.{ts,js}": [
                 "prettier --write",
                 "eslint --fix",
                 "git add"
             ],
+            "*.{html,scss,css}": [
+                "prettier --write",
+                "git add"
+            ]
         }
     }]
 }
