@@ -20,6 +20,13 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
-    'arrow-parens': ['error', 'as-needed']
+    'arrow-parens': ['error', 'as-needed'],
+    '@typescript-eslint/naming-convention': [
+      'warn',
+      {
+        selector: 'enum',
+        format: ['UPPER_CASE']
+      },
+    ],
   },
 };
