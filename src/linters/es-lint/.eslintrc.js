@@ -1,8 +1,7 @@
-const commonRules = require('../common-rules')
-
 module.exports = {
     extends: ['airbnb-typescript/base', 'eslint-config-prettier'],
     rules: {
-        ...commonRules.enumShadow
+        'no-shadow': 'off',
+        '@typescript-eslint/no-shadow': 'error'
     }
 };
