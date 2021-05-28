@@ -5,7 +5,7 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'airbnb-typescript',
+    'airbnb-typescript/base',
   ],
   parserOptions: {
     ecmaVersion: 12,
