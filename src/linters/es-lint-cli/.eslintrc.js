@@ -1,3 +1,5 @@
+const commonRules = require('../common-rules')
+
 module.exports = {
   env: {
     browser: true,
@@ -15,7 +17,6 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
-    "no-shadow": "off",
-    "@typescript-eslint/no-shadow": "error"
+    ...commonRules.enumShadow
   },
 };
