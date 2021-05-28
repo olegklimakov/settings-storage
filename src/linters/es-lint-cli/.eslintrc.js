@@ -19,5 +19,6 @@ module.exports = {
     '@typescript-eslint/no-shadow': 'error',
     'import/prefer-default-export': 'off',
     'import/extensions': 'off',
+    'import/no-unresolved': 'off',
   },
 };
