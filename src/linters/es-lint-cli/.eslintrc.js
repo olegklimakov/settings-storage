@@ -20,5 +20,6 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
+    'arrow-parens': ['error', 'as-needed']
   },
 };
