@@ -5,6 +5,7 @@ module.exports = {
         "eslint-config-airbnb-base",
     ],
     files: [
-        '.eslintrc.js'
+        '.eslintrc.js',
+        '.eslintignore',
     ]
 }
