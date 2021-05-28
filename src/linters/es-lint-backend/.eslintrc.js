@@ -27,6 +27,7 @@ module.exports = {
         'object-curly-newline': 'off',
         'operator-linebreak': 'off', // https://github.com/prettier/prettier/issues/3806
         'no-shadow': 'off',
-        '@typescript-eslint/no-shadow': 'error'
+        '@typescript-eslint/no-shadow': 'error',
+        'import/prefer-default-export': 'off',
     },
 };
