@@ -26,5 +26,7 @@ module.exports = {
         'max-len': ['error', { code: 100, ignoreUrls: true }],
         'object-curly-newline': 'off',
         'operator-linebreak': 'off', // https://github.com/prettier/prettier/issues/3806
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": "error"
     },
 };
