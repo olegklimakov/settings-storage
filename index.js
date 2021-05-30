@@ -1,25 +1,44 @@
+const commonLibs = [
+    {
+        name: 'prettier',
+        rule: require('src/tools/prettier'),
+    },
+    {
+        name: 'husky',
+        rule: require('src/tools/husky'),
+    },
+    {
+        name: 'lint-staged',
+        rule: require('src/tools/lint-staged'),
+    }
+]
+
 module.exports = {
     front: {
-        rules: [
+        directories: [
             {
                 name: 'es-lint',
-                rule: require('src/linters/es-lint'),
+                path: 'src/linters/es-lint',
             },
-            {
-                name: 'prettier',
-                rule: require('src/tools/prettier'),
-            },
-            {
-                name: 'husky',
-                rule: require('src/tools/husky'),
-            },
-            {
-                name: 'lint-staged',
-                rule: require('src/tools/lint-staged'),
-            }
+            ...commonLibs
         ]
     },
     back: {
-
+        directories: [
+            {
+                name: 'es-lint',
+                path: 'src/linters/es-lint-backend',
+            },
+            ...commonLibs
+        ]
+    },
+    cli: {
+        directories: [
+            {
+                name: 'es-lint',
+                path: 'src/linters/es-lint-cli',
+            },
+            ...commonLibs
+        ]
     }
 }
