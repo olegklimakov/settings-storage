@@ -12,6 +12,7 @@ module.exports = {
         'eslint-plugin-prettier'
     ],
     files: [
-        '.eslintrc.js'
+        '.eslintrc.js',
+        '.eslintignore',
     ]
 }

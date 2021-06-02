@@ -1,11 +1,15 @@
 module.exports = {
     devPackages: [
-        "eslint",
-        "@typescript-eslint/parser",
-        "eslint-config-airbnb-base",
         "eslint-config-airbnb-typescript",
-        "eslint-plugin-import",
-        "@typescript-eslint/eslint-plugin"
+        "eslint-plugin-import@^2.22.0",
+        "@typescript-eslint/eslint-plugin@^4.4.1",
+        "eslint-config-prettier",
+        '@typescript-eslint/recommended',
+        'prettier/recommended',
+        '@typescript-eslint/eslint-plugin',
+        'eslint',
+        'eslint-config-airbnb-base',
+        'eslint-plugin-prettier'
     ],
     files: [
         '.eslintrc.js',
