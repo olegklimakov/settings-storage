@@ -1,32 +1,26 @@
 module.exports = {
-    env: {
-        browser: true,
-        commonjs: true,
-        es2021: true,
+    parser: '@typescript-eslint/parser',
+    parserOptions: {
+        project: 'tsconfig.json',
+        sourceType: 'module',
     },
+    plugins: ['@typescript-eslint/eslint-plugin'],
     extends: [
+        'plugin:@typescript-eslint/recommended',
+        'prettier/@typescript-eslint',
+        'plugin:prettier/recommended',
         'airbnb-typescript/base',
     ],
-    parserOptions: {
-        ecmaVersion: 12,
-        project: './tsconfig.json',
+    root: true,
+    env: {
+        node: true,
+        jest: true,
     },
-    plugins: [
-        '@typescript-eslint',
-    ],
+    ignorePatterns: ['.eslintrc.js'],
     rules: {
-        'no-shadow': 'off',
-        '@typescript-eslint/no-shadow': 'error',
-        'import/prefer-default-export': 'off',
-        'import/extensions': 'off',
-        'import/no-unresolved': 'off',
-        'arrow-parens': ['error', 'as-needed'],
-        '@typescript-eslint/naming-convention': [
-            'warn',
-            {
-                selector: 'enum',
-                format: ['UPPER_CASE']
-            },
-        ],
+        '@typescript-eslint/interface-name-prefix': 'off',
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
     },
 };
